@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentController">
+   <children>
+      <Button fx:id="sViewAccount" layoutX="69.0" layoutY="64.0" mnemonicParsing="false" onAction="#sViewAccount" text="View Account" />
+      <Button fx:id="sViewClasses" layoutX="332.0" layoutY="64.0" mnemonicParsing="false" onAction="#sViewClasses" text="View Classes" />
+      <Button fx:id="sEditAccount" layoutX="69.0" layoutY="109.0" mnemonicParsing="false" onAction="#sEditAccount" text="Edit Account" />
+      <Button fx:id="sLogOut" layoutX="370.0" layoutY="428.0" mnemonicParsing="false" onAction="#sLogOut" text="Logout" />
+      <TableView fx:id="sView" layoutX="69.0" layoutY="168.0" prefHeight="225.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="viewMyAcc" prefWidth="75.0" text="My Account" />
+          <TableColumn fx:id="viewMyCl" prefWidth="75.0" text="My Classes" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
